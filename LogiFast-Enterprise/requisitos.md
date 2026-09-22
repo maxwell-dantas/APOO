@@ -33,4 +33,12 @@
 | RN02 | Confirmação de Chamado do Cliente Corporativo | Bloquear solicitação caso crédito do cliente corporativo ultrapasse o limite disponível da conta jurídica |
 | RN03 | Taxa de Cancelamento | Caso o cancelamento do pedido seja solicitado após 10 minutos da aceitação por parte do motorista, o sistema aplicará automaticamente uma taxa de retenção de 20% sobre o valor estimado do frete |
 | RN04 | Limite de Rota | Caso o veículo do motorista parceiro apresente menos de 25% de autonomia restante, as rotas ofertadas não poderão ser superiores a 40km |
-| RN05 | Suspensão de Tempo do Limite de Entrega | Caso ocorra algum imprevisto durante o percurso (pneu furado, acidente ou avaria da carga), o tempo limite de entrega é suspendido | 
+| RN05 | Suspensão de Tempo do Limite de Entrega | Caso ocorra algum imprevisto durante o percurso (pneu furado, acidente ou avaria da carga), o tempo limite de entrega é suspendido |
+
+## Matriz de Rastreabilidade Simples
+
+| RF | RNF Associado | RN Associado |
+| :--: | :--: | :--: |
+| RF01 | RNF03 | RN01 e RN02 |
+| RF02 | RNF03 | RN01 |
+| RF09 | RNF04 | RN05 |
